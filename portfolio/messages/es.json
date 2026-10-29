@@ -1,0 +1,127 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "illustrations": "Ilustraciones",
+    "webs": "Diseño Web",
+    "logos": "Logos",
+    "videos": "Vídeos",
+    "gaming": "Gaming",
+    "contact": "Contacto",
+    "admin": "Admin"
+  },
+  "hero": {
+    "label": "Freelancer · Creadora digital",
+    "title_1": "Arte, diseño",
+    "title_2": "y comunidad",
+    "subtitle": "Ilustraciones digitales, logos, diseño web, vídeos cortos y sesiones de gaming. Todo con tu estilo, entregado a tiempo.",
+    "cta_primary": "Ver servicios",
+    "cta_secondary": "Contactar"
+  },
+  "services": {
+    "label": "Lo que ofrezco",
+    "title": "Mis servicios",
+    "desc": "Desde ilustraciones únicas hasta webs completas. Todo personalizado para ti.",
+    "illustration": {
+      "title": "Ilustración digital",
+      "desc": "Dibujos personalizados, stickers, arte de personajes y diseños Canva con mi estilo único."
+    },
+    "web": {
+      "title": "Diseño web",
+      "desc": "Webs a medida con diseño profesional. Desde landing pages hasta portfolios completos."
+    },
+    "logo": {
+      "title": "Logos & Branding",
+      "desc": "Identidad visual que representa tu marca. Logos originales y memorable."
+    },
+    "video": {
+      "title": "Edición de vídeo",
+      "desc": "Reels, shorts y vídeos cortos editados con ritmo y estilo para redes sociales."
+    },
+    "gaming": {
+      "title": "Gaming & Comunidad",
+      "desc": "Sesiones de juego, servidores activos y comunidad. Minecraft, Mobile Legends y más."
+    },
+    "canva": {
+      "title": "Diseños Canva",
+      "desc": "Plantillas y diseños personalizados en Canva para tu negocio o redes sociales."
+    }
+  },
+  "illustrations": {
+    "label": "Galería",
+    "title": "Ilustraciones",
+    "desc": "Arte digital con mi estilo propio. Cada pieza es única.",
+    "filter_all": "Todas",
+    "filter_illustration": "Ilustraciones",
+    "filter_sticker": "Stickers",
+    "filter_book": "Libro ilustrado",
+    "filter_canva": "Canva",
+    "filter_logo": "Logos",
+    "protected": "Imagen protegida por marca de agua"
+  },
+  "webs": {
+    "label": "Portfolio web",
+    "title": "Diseños web",
+    "desc": "Proyectos reales. Cada web con su propia identidad.",
+    "view_live": "Ver web",
+    "preview": "Vista previa"
+  },
+  "videos": {
+    "label": "Reels & Vídeos",
+    "title": "Mis vídeos",
+    "desc": "Edición de vídeo para redes sociales. Ritmo, estilo y creatividad."
+  },
+  "gaming": {
+    "label": "Gaming",
+    "title": "Comunidad gaming",
+    "desc": "Juego, charlo y creo comunidad. Únete a la sesión.",
+    "active_server": "Servidor activo",
+    "no_server": "Sin servidor activo",
+    "join_discord": "Unirse al Discord",
+    "server_info": "Info del servidor",
+    "game_id": "Mi ID en el juego",
+    "platforms": {
+      "pc": "PC",
+      "mobile": "Móvil",
+      "cross": "Multiplataforma"
+    }
+  },
+  "contact": {
+    "label": "Contacto",
+    "title": "Hablemos",
+    "desc": "¿Tienes un proyecto en mente? Cuéntame y te respondo lo antes posible.",
+    "name": "Tu nombre",
+    "email": "Tu email",
+    "subject": "Asunto",
+    "service": "¿Qué servicio necesitas?",
+    "message": "Cuéntame tu proyecto...",
+    "submit": "Enviar mensaje",
+    "sending": "Enviando...",
+    "success": "¡Mensaje enviado! Te respondo pronto.",
+    "error": "Algo fue mal. Inténtalo de nuevo.",
+    "fiverr_cta": "O encuéntrame en Fiverr",
+    "service_options": {
+      "illustration": "Ilustración digital",
+      "web": "Diseño web",
+      "logo": "Logo / Branding",
+      "video": "Edición de vídeo",
+      "gaming": "Gaming / Comunidad",
+      "canva": "Diseños Canva",
+      "other": "Otro"
+    }
+  },
+  "footer": {
+    "tagline": "Creando con propósito desde 2024.",
+    "rights": "Todos los derechos reservados.",
+    "links": "Enlaces",
+    "social": "Redes"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error al cargar",
+    "empty": "Sin contenido aún",
+    "featured": "Destacado",
+    "view_all": "Ver todos",
+    "back": "Volver",
+    "lang_switch": "EN"
+  }
+}

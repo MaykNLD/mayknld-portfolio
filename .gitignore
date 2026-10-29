@@ -1,0 +1,12 @@
+# Token files — NUNCA subir al repo
+env.
+*.token
+*.secret
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/

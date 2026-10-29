@@ -1,0 +1,75 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-5);
+}
+
+.gameCard { overflow: hidden; }
+
+.cover {
+  position: relative;
+  height: 160px;
+  overflow: hidden;
+  background: var(--clr-bg-3);
+}
+
+.coverOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 40%, rgba(10,10,15,0.8) 100%);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.badges {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.activeDot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--clr-success);
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.gameName {
+  font-family: var(--font-display);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-semi);
+  color: var(--clr-text);
+}
+
+.gameDesc {
+  font-size: var(--fs-sm);
+  color: var(--clr-text-muted);
+  line-height: var(--lh-relaxed);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  margin-top: var(--space-2);
+}
+
+.gameId {
+  font-size: var(--fs-xs);
+  color: var(--clr-text-muted);
+}
+
+.gameId code {
+  color: var(--clr-primary-light);
+  font-family: monospace;
+  background: var(--clr-glow-soft);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+}

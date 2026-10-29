@@ -1,0 +1,127 @@
+{
+  "nav": {
+    "home": "Home",
+    "illustrations": "Illustrations",
+    "webs": "Web Design",
+    "logos": "Logos",
+    "videos": "Videos",
+    "gaming": "Gaming",
+    "contact": "Contact",
+    "admin": "Admin"
+  },
+  "hero": {
+    "label": "Freelancer · Digital Creator",
+    "title_1": "Art, design",
+    "title_2": "and community",
+    "subtitle": "Digital illustrations, logos, web design, short videos and gaming sessions. Everything with your style, delivered on time.",
+    "cta_primary": "View services",
+    "cta_secondary": "Contact me"
+  },
+  "services": {
+    "label": "What I offer",
+    "title": "My services",
+    "desc": "From unique illustrations to full websites. Everything customized for you.",
+    "illustration": {
+      "title": "Digital illustration",
+      "desc": "Custom drawings, stickers, character art and Canva designs with my unique style."
+    },
+    "web": {
+      "title": "Web design",
+      "desc": "Custom websites with professional design. From landing pages to full portfolios."
+    },
+    "logo": {
+      "title": "Logos & Branding",
+      "desc": "Visual identity that represents your brand. Original and memorable logos."
+    },
+    "video": {
+      "title": "Video editing",
+      "desc": "Reels, shorts and short videos edited with rhythm and style for social media."
+    },
+    "gaming": {
+      "title": "Gaming & Community",
+      "desc": "Game sessions, active servers and community. Minecraft, Mobile Legends and more."
+    },
+    "canva": {
+      "title": "Canva designs",
+      "desc": "Custom templates and designs in Canva for your business or social media."
+    }
+  },
+  "illustrations": {
+    "label": "Gallery",
+    "title": "Illustrations",
+    "desc": "Digital art with my own style. Each piece is unique.",
+    "filter_all": "All",
+    "filter_illustration": "Illustrations",
+    "filter_sticker": "Stickers",
+    "filter_book": "Illustrated book",
+    "filter_canva": "Canva",
+    "filter_logo": "Logos",
+    "protected": "Image protected by watermark"
+  },
+  "webs": {
+    "label": "Web portfolio",
+    "title": "Web designs",
+    "desc": "Real projects. Each website with its own identity.",
+    "view_live": "View website",
+    "preview": "Preview"
+  },
+  "videos": {
+    "label": "Reels & Videos",
+    "title": "My videos",
+    "desc": "Video editing for social media. Rhythm, style and creativity."
+  },
+  "gaming": {
+    "label": "Gaming",
+    "title": "Gaming community",
+    "desc": "I play, chat and build community. Join the session.",
+    "active_server": "Active server",
+    "no_server": "No active server",
+    "join_discord": "Join Discord",
+    "server_info": "Server info",
+    "game_id": "My in-game ID",
+    "platforms": {
+      "pc": "PC",
+      "mobile": "Mobile",
+      "cross": "Cross-platform"
+    }
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Let's talk",
+    "desc": "Have a project in mind? Tell me about it and I'll get back to you as soon as possible.",
+    "name": "Your name",
+    "email": "Your email",
+    "subject": "Subject",
+    "service": "What service do you need?",
+    "message": "Tell me about your project...",
+    "submit": "Send message",
+    "sending": "Sending...",
+    "success": "Message sent! I'll reply soon.",
+    "error": "Something went wrong. Please try again.",
+    "fiverr_cta": "Or find me on Fiverr",
+    "service_options": {
+      "illustration": "Digital illustration",
+      "web": "Web design",
+      "logo": "Logo / Branding",
+      "video": "Video editing",
+      "gaming": "Gaming / Community",
+      "canva": "Canva designs",
+      "other": "Other"
+    }
+  },
+  "footer": {
+    "tagline": "Creating with purpose since 2024.",
+    "rights": "All rights reserved.",
+    "links": "Links",
+    "social": "Social"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error loading",
+    "empty": "No content yet",
+    "featured": "Featured",
+    "view_all": "View all",
+    "back": "Back",
+    "lang_switch": "ES"
+  }
+}

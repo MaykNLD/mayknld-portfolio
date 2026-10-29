@@ -1,0 +1,102 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: var(--space-4);
+  grid-template-areas:
+    "featured featured b"
+    "featured featured c"
+    "d        e        f";
+}
+
+.frame {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 1;
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.frame:first-child {
+  aspect-ratio: auto;
+  min-height: 300px;
+}
+
+.frame:hover {
+  border-color: var(--clr-border-hover);
+  box-shadow: var(--shadow-glow);
+}
+
+/* Watermark text overlay */
+.watermark {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 4vw, 2.5rem);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.3em;
+  color: rgba(255, 255, 255, 0.12);
+  text-transform: uppercase;
+  pointer-events: none;
+  user-select: none;
+  z-index: 2;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  transform: rotate(-30deg);
+}
+
+/* Info overlay */
+.info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  background: linear-gradient(to top, rgba(10,10,15,0.9) 0%, transparent 100%);
+  transform: translateY(8px);
+  opacity: 0;
+  transition: transform var(--transition-base), opacity var(--transition-base);
+  z-index: 3;
+}
+
+.frame:hover .info {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.itemTitle {
+  font-family: var(--font-display);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  color: var(--clr-text);
+}
+
+.viewAll {
+  text-align: center;
+  margin-top: var(--space-10);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "featured featured"
+      "b        c"
+      "d        e";
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: none;
+  }
+  .frame:first-child { aspect-ratio: 4/3; }
+}
