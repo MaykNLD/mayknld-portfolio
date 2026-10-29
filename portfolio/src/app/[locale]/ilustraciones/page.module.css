@@ -1,0 +1,24 @@
+.page {
+  position: relative;
+  padding-top: calc(var(--nav-height) + var(--space-16));
+  padding-bottom: var(--space-24);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.orb {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(109, 40, 217, 0.15) 0%, transparent 70%);
+  top: -100px;
+  right: -150px;
+  pointer-events: none;
+  animation: orb-float 12s ease-in-out infinite;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--space-12);
+}
