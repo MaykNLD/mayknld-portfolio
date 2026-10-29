@@ -4,11 +4,7 @@ import { useState, useRef } from 'react'
 import { useTranslations } from 'next-intl'
 import styles from './ContactForm.module.css'
 
-interface Props {
-  locale: string
-}
-
-export default function ContactForm({ locale }: Props) {
+export default function ContactForm() {
   const t = useTranslations('contact')
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle')
   const formRef = useRef<HTMLFormElement>(null)
@@ -109,7 +105,7 @@ export default function ContactForm({ locale }: Props) {
             <option value="">— {t('service')} —</option>
             {serviceOptions.map(opt => (
               <option key={opt} value={opt}>
-                {t(`service_options.${opt}` as any)}
+                {t(`service_options.${opt}` as Parameters<typeof t>[0])}
               </option>
             ))}
           </select>

@@ -50,7 +50,7 @@ export default function Footer({ locale }: FooterProps) {
           <span className={styles.linksTitle}>{t('links')}</span>
           {links.map(item => (
             <Link key={item.key} href={item.href} className={styles.link}>
-              {tn(item.key as any)}
+              {tn(item.key as Parameters<typeof tn>[0])}
             </Link>
           ))}
         </nav>

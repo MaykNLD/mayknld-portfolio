@@ -10,7 +10,6 @@ interface HeroSectionProps {
 
 export default function HeroSection({ locale }: HeroSectionProps) {
   const t = useTranslations('hero')
-  const tn = useTranslations('nav')
 
   return (
     <section className={styles.hero} aria-label="Presentación" id="hero">

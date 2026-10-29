@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { useTranslations, useLocale } from 'next-intl'
+import { useTranslations } from 'next-intl'
 import { usePathname, useRouter } from 'next/navigation'
 import styles from './Navbar.module.css'
 
@@ -67,7 +67,7 @@ export default function Navbar({ locale }: NavbarProps) {
               className={`${styles.navLink} ${isActive(item.href) ? styles.active : ''}`}
               aria-current={isActive(item.href) ? 'page' : undefined}
             >
-              {t(item.key as any)}
+              {t(item.key as Parameters<typeof t>[0])}
             </Link>
           ))}
         </nav>
@@ -117,7 +117,7 @@ export default function Navbar({ locale }: NavbarProps) {
               href={item.href}
               className={`${styles.mobileLink} ${isActive(item.href) ? styles.mobileActive : ''}`}
             >
-              {t(item.key as any)}
+              {t(item.key as Parameters<typeof t>[0])}
             </Link>
           ))}
           <div className={styles.mobileDivider} />

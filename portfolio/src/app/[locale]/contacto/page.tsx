@@ -36,7 +36,7 @@ export default async function ContactPage({
         <div className={styles.grid}>
           {/* Form */}
           <div className={`${styles.formCard} glass`}>
-            <ContactForm locale={locale} />
+            <ContactForm />
           </div>
 
           {/* Sidebar info */}

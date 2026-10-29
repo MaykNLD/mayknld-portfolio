@@ -30,7 +30,7 @@ export default function ServicesSection({ locale }: ServicesSectionProps) {
         </div>
 
         <div className={styles.grid}>
-          {services.map((svc, i) => (
+          {services.map((svc) => (
             <Link
               key={svc.key}
               href={`/${locale}/${svc.href}`}
@@ -42,8 +42,8 @@ export default function ServicesSection({ locale }: ServicesSectionProps) {
                 <span className={styles.icon}>{svc.icon}</span>
               </div>
               <div className={styles.body}>
-                <h3 className={styles.title}>{t(`${svc.key}.title` as any)}</h3>
-                <p className={styles.desc}>{t(`${svc.key}.desc` as any)}</p>
+                <h3 className={styles.title}>{t(`${svc.key}.title` as Parameters<typeof t>[0])}</h3>
+                <p className={styles.desc}>{t(`${svc.key}.desc` as Parameters<typeof t>[0])}</p>
               </div>
               <span className={styles.arrow} aria-hidden>→</span>
             </Link>

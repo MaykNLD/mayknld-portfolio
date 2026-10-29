@@ -11,6 +11,7 @@ interface Props {
 
 export default function FeaturedIllustrations({ items, locale }: Props) {
   const t = useTranslations('illustrations')
+  const tc = useTranslations('common')
 
   return (
     <section className="section" aria-labelledby="illus-title">
@@ -39,14 +40,10 @@ export default function FeaturedIllustrations({ items, locale }: Props) {
                 draggable={false}
                 onContextMenu={e => e.preventDefault()}
               />
-              {/* Watermark overlay */}
               <div className={styles.watermark} aria-hidden>MaykNLD</div>
-
               <div className="artwork-overlay" />
               <div className={styles.info}>
-                <span className="badge badge-primary">
-                  {item.category}
-                </span>
+                <span className="badge badge-primary">{item.category}</span>
                 <p className={styles.itemTitle}>
                   {locale === 'es' ? item.title_es : item.title_en}
                 </p>
@@ -61,7 +58,7 @@ export default function FeaturedIllustrations({ items, locale }: Props) {
             className="btn btn-outline"
             id="illus-view-all"
           >
-            {useTranslations('common')('view_all')} →
+            {tc('view_all')} →
           </Link>
         </div>
       </div>

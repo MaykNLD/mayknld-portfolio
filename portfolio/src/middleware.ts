@@ -16,9 +16,6 @@ const adminRoutes = ['/admin']
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
 
-  // ── Security headers ──────────────────────────────────────
-  const response = NextResponse.next()
-
   // Block known bad bots / scrapers via User-Agent
   const ua = request.headers.get('user-agent') || ''
   const badBots = ['scrapy', 'semrushbot', 'ahrefsbot', 'dotbot', 'majestic']

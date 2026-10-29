@@ -1,4 +1,4 @@
-import { getTranslations } from 'next-intl/server'
+
 import HeroSection from '@/components/sections/HeroSection'
 import ServicesSection from '@/components/sections/ServicesSection'
 import FeaturedIllustrations from '@/components/sections/FeaturedIllustrations'
