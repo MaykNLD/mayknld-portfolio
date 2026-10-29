@@ -1,62 +1,106 @@
+.section {
+  position: relative;
+  background: var(--clr-bg-2);
+  overflow: hidden;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--clr-border), transparent);
+}
+
+.header {
+  margin-bottom: var(--space-16);
+}
+
+/* ── GRID ────────────────────────────────────────────────── */
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-5);
+  gap: 1px;
+  background: var(--clr-border);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
 }
 
+/* ── CARD ────────────────────────────────────────────────── */
 .card {
   display: flex;
-  flex-direction: column;
-  gap: var(--space-4);
-  padding: var(--space-6);
+  align-items: flex-start;
+  gap: var(--space-5);
+  padding: var(--space-8) var(--space-6);
+  background: var(--clr-bg-2);
+  text-decoration: none;
   position: relative;
   overflow: hidden;
-  text-decoration: none;
+  transition: background var(--transition-base);
 }
 
-.card::before {
+.card::after {
   content: '';
   position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(var(--svc-color-r, 139), var(--svc-color-g, 92), var(--svc-color-b, 246), 0.06) 0%, transparent 60%);
-  opacity: 0;
-  transition: opacity var(--transition-base);
+  bottom: 0;
+  left: var(--space-6);
+  right: var(--space-6);
+  height: 2px;
+  background: var(--svc-color, var(--clr-primary));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition-slow);
 }
 
-.card:hover::before { opacity: 1; }
+.card:hover {
+  background: var(--clr-bg-3);
+}
+
+.card:hover::after {
+  transform: scaleX(1);
+}
 
 .card:hover .arrow {
-  transform: translateX(4px);
-  color: var(--svc-color, var(--clr-primary-light));
+  transform: translateX(6px);
+  color: var(--svc-color, var(--clr-primary));
 }
 
-.iconWrap {
-  width: 48px;
-  height: 48px;
-  border-radius: var(--radius-md);
-  background: rgba(139, 92, 246, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgba(139, 92, 246, 0.15);
-  transition: background var(--transition-base), border-color var(--transition-base);
+.card:hover .number {
+  -webkit-text-stroke-color: var(--svc-color, var(--clr-primary));
+  opacity: 1;
 }
 
-.card:hover .iconWrap {
-  background: rgba(139, 92, 246, 0.18);
-  border-color: rgba(139, 92, 246, 0.3);
+/* ── NUMBER — editorial outline ──────────────────────────── */
+.number {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: var(--fw-black);
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--clr-text-subtle);
+  letter-spacing: -0.02em;
+  flex-shrink: 0;
+  opacity: 0.5;
+  transition: all var(--transition-base);
+  user-select: none;
 }
 
-.icon { font-size: 1.5rem; line-height: 1; }
-
-.body { flex: 1; }
+/* ── CONTENT ─────────────────────────────────────────────── */
+.cardContent {
+  flex: 1;
+  min-width: 0;
+}
 
 .title {
   font-family: var(--font-display);
-  font-size: var(--fs-base);
-  font-weight: var(--fw-semi);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
   color: var(--clr-text);
   margin-bottom: var(--space-2);
+  letter-spacing: -0.01em;
 }
 
 .desc {
@@ -65,17 +109,33 @@
   line-height: var(--lh-relaxed);
 }
 
+/* ── ARROW ───────────────────────────────────────────────── */
 .arrow {
-  font-size: var(--fs-lg);
+  font-size: var(--fs-xl);
   color: var(--clr-text-subtle);
-  align-self: flex-end;
+  align-self: center;
+  flex-shrink: 0;
   transition: transform var(--transition-base), color var(--transition-base);
 }
 
+/* ── RESPONSIVE ──────────────────────────────────────────── */
 @media (max-width: 1024px) {
-  .grid { grid-template-columns: repeat(2, 1fr); }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 600px) {
-  .grid { grid-template-columns: 1fr; }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: var(--space-6) var(--space-5);
+    gap: var(--space-4);
+  }
+
+  .number {
+    font-size: 2rem;
+  }
 }
